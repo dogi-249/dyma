@@ -3,5 +3,5 @@ from clothingCoordination import views
 
 app_name = 'clothing'
 urlpatterns = [
-  path('', views.test),
+  path('test/', views.test),
 ]
