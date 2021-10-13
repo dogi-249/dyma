@@ -68,15 +68,16 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser, PermissionsMixin):
     """カスタムユーザーモデル"""
 
-    username = models.CharField(max_length=150)
-    email = models.EmailField(unique=True)
+    username = models.CharField(max_length=150)  # ユーザーネーム
+    email = models.EmailField(unique=True)  # メールアドレス
     years = models.PositiveIntegerField(null=True, blank=True)  # 年齢
-    sex = models.CharField(max_length=8, choices=(('男性', '男性'), ('女性', '女性'), ('その他', 'その他')), null=True, blank=True)
+    sex = models.CharField(max_length=8, choices=(('男性', '男性'), ('女性', '女性'), ('その他', 'その他')), null=True,
+                           blank=True)  # 性別
     body_height = models.PositiveIntegerField(null=True, blank=True)  # 身長
-    is_staff = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now_add=True)
-    is_deleted = models.BooleanField(default=False)
+    is_staff = models.BooleanField(default=False)  # staffかどうか
+    created_at = models.DateTimeField(auto_now_add=True)  # 作成日時
+    updated_at = models.DateTimeField(auto_now=True)  # 更新日時
+    is_deleted = models.BooleanField(default=False)  # 削除フラグ
 
     objects = UserManager()
 
