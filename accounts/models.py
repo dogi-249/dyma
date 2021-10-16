@@ -2,6 +2,7 @@ from django.contrib import auth
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
+from django.contrib.auth.validators import UnicodeUsernameValidator
 
 
 # Create your models here.
@@ -68,7 +69,9 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser, PermissionsMixin):
     """カスタムユーザーモデル"""
 
-    username = models.CharField(max_length=150)  # ユーザーネーム
+    username_validator = UnicodeUsernameValidator()
+
+    username = models.CharField(max_length=150, validators=[username_validator])  # ユーザーネーム
     email = models.EmailField(unique=True)  # メールアドレス
     years = models.PositiveIntegerField(null=True, blank=True)  # 年齢
     sex = models.CharField(max_length=8, choices=(('男性', '男性'), ('女性', '女性'), ('その他', 'その他')), null=True,
