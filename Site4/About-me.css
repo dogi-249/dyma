@@ -1,0 +1,183 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 504px;
+}
+
+.u-section-1 .u-group-1 {
+  width: 800px;
+  min-height: 296px;
+  margin: 80px auto 0;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 15px 30px 26px;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: "Montserrat Subrayada";
+  width: 137px;
+  margin: 12px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  font-family: "Montserrat Subrayada";
+  font-size: 1.25rem;
+  margin: 20px 392px 0 137px;
+}
+
+.u-section-1 .u-list-icon-1 {
+  color: rgb(255, 167, 84) !important;
+}
+
+.u-section-1 .u-text-3 {
+  font-family: "Montserrat Subrayada";
+  font-size: 1.25rem;
+  margin: 20px 392px 0 137px;
+}
+
+.u-section-1 .u-list-icon-2 {
+  color: rgb(255, 167, 84) !important;
+}
+
+.u-section-1 .u-text-4 {
+  font-family: "Montserrat Subrayada";
+  font-size: 1.25rem;
+  margin: -32px 153px 0 376px;
+}
+
+.u-section-1 .u-list-icon-3 {
+  color: rgb(255, 167, 84) !important;
+}
+
+.u-section-1 .u-text-5 {
+  font-family: "Montserrat Subrayada";
+  font-size: 1.25rem;
+  margin: 20px 392px 0 137px;
+}
+
+.u-section-1 .u-list-icon-4 {
+  color: rgb(255, 167, 84) !important;
+}
+
+.u-section-1 .u-text-6 {
+  font-family: "Montserrat Subrayada";
+  font-size: 1.25rem;
+  margin: 20px 392px 0 137px;
+}
+
+.u-section-1 .u-list-icon-5 {
+  color: rgb(255, 167, 84) !important;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: solid;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  background-image: none;
+  margin: 27px auto 53px;
+  padding: 10px 31px 10px 30px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-3 {
+    margin-right: 391px;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-right: 391px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-group-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 97px;
+    margin-right: 352px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 351px;
+    margin-left: 97px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-right: 113px;
+    margin-left: 336px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-right: 352px;
+    margin-left: 97px;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-right: 351px;
+    margin-left: 97px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-group-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 27px;
+    margin-right: 282px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 281px;
+    margin-left: 27px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-right: 43px;
+    margin-left: 266px;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-right: 282px;
+    margin-left: 27px;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-right: 281px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-group-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 0;
+    margin-right: 109px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 108px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-top: 20px;
+    margin-right: 108px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-5 {
+    margin-right: 109px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-6 {
+    margin-right: 108px;
+    margin-left: 0;
+  }
+}
