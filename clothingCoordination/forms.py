@@ -12,14 +12,3 @@ class UpLoadCoordinateForm(forms.ModelForm):
     class Meta:
         model = coordinateInfo
         fields = ('coordinate_name', 'image',)
-
-
-# class ClothingTagsForm(forms.ModelForm):
-#     """服のタグ付けフォーム"""
-#
-#     def __init__(self, *args, **kwargs):
-#         super().__init__(*args, **kwargs)
-#
-#     class Meta:
-#         model =
-#         fields = ()
