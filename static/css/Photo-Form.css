@@ -1,0 +1,165 @@
+.u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 465px;
+}
+
+.u-section-1 .u-layout-wrap-1 {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.u-section-1 .u-layout-cell-1 {
+  min-height: 465px;
+  background-image: none;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px 10px 30px 20px;
+}
+
+.u-section-1 .u-custom-html-1 {
+  margin: 0 20px;
+}
+
+.u-section-1 .u-custom-html-2 {
+  height: auto;
+  min-height: 196px;
+  width: 440px;
+  margin: 110px 0 0;
+}
+
+.u-section-1 .u-layout-cell-2 {
+  min-height: 465px;
+  margin-top: 0;
+  background-image: none;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 1.5rem;
+  font-family: "Montserrat Subrayada";
+  margin: 40px auto 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 204px;
+  margin: 40px auto 0;
+}
+
+.u-section-1 .u-input-1 {
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-input-2 {
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-btn-1 {
+  font-family: "Montserrat Subrayada";
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 385px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    min-height: 296px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 410px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 90px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-custom-html-2 {
+    width: 330px;
+  }
+
+  .u-section-1 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 190px;
+  }
+
+  .u-section-1 .u-layout-wrap-1 {
+    min-height: 440px;
+    width: 540px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+  }
+
+  .u-section-1 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-layout-wrap-1 {
+    min-height: 280px;
+    width: 340px;
+  }
+
+  .u-section-1 .u-custom-html-2 {
+    width: 320px;
+  }
+
+  .u-section-1 .u-form-group-1 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-2 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-3 {
+    width: 100%;
+  }
+}.drag-erea{
+  padding:180px 0;
+  width:100%;
+  margin: 0 auto 20px;
+  background: #f6f6f6;
+  text-align: center;
+}
+.drag-erea.drag{
+  background: #f0f0f0;
+}
+.drag-erea input {
+   margin:0 auto;
+} 

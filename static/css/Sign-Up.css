@@ -1,0 +1,210 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 929px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 3rem;
+  width: 841px;
+  text-transform: none;
+  font-weight: 300;
+  font-family: "Montserrat Subrayada";
+  text-decoration: none solid rgb(17, 17, 17);
+  margin: 60px auto 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 502px;
+  width: 855px;
+  margin: 20px auto 0;
+}
+
+.u-section-1 .u-form-group-1 {
+  width: 100%;
+}
+
+.u-section-1 .u-label-1 {
+  font-weight: 700;
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-form-group-2 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-2 {
+  font-weight: 700;
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-label-3 {
+  font-weight: 700;
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-form-group-4 {
+  width: 100%;
+}
+
+.u-section-1 .u-label-4 {
+  font-weight: 700;
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-form-group-5 {
+  width: 100%;
+}
+
+.u-section-1 .u-label-5 {
+  font-weight: 700;
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-form-group-6 {
+  width: 100%;
+}
+
+.u-section-1 .u-label-6 {
+  font-weight: 700;
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-form-group-7 {
+  width: 100%;
+}
+
+.u-section-1 .u-label-7 {
+  font-weight: 700;
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-form-group-8 {
+  width: 100%;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: "Montserrat Subrayada";
+}
+
+.u-section-1 .u-text-2 {
+  margin: 61px 516px 0 418px;
+}
+
+.u-section-1 .u-btn-2 {
+  border-style: none none solid;
+  font-family: "Montserrat Subrayada";
+  margin: -26px 404px 60px auto;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 851px;
+  }
+
+  .u-section-1 .u-form-group-2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-top: 50px;
+    margin-right: 445px;
+    margin-left: 289px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-top: -25px;
+    margin-right: 322px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 860px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 720px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 335px;
+    margin-left: 179px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-right: 212px;
+    margin-bottom: 59px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: 49px;
+    margin-right: 250px;
+    margin-left: 84px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-top: -26px;
+    margin-right: 134px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 934px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 2.25rem;
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-form-group-2 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-form-group-3 {
+    width: 100%;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: 48px;
+    margin-right: 123px;
+    margin-left: 11px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-top: -25px;
+    margin-right: 20px;
+  }
+}
