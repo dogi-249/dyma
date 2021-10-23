@@ -6,18 +6,16 @@
   <link rel="stylesheet" href="{% static 'clothing/css/Sign-Up.css' %}" media="screen">
   <meta property="og:title" content="Sign Up">
 {% endblock %}
-<head>
-
-</head>
 
 {% block content %}
   <body class="u-body">
+  {{ form.as_table }}
   <section class="u-align-center u-clearfix u-section-1" id="carousel_aa73">
     <div class="u-clearfix u-sheet u-sheet-1">
       <h2 class="u-custom-font u-text u-text-1">Sign Up</h2>
       <div class="u-form u-form-1">
         <form action="#" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
-              style="padding: 0;" source="custom" name="form">
+              style="padding: 0;" source="custom" name="form">{% csrf_token %}
           <div class="u-form-group u-form-name u-form-group-1">
             <label for="name-f2a8" class="u-custom-font u-label u-label-1">Username</label>
             <input type="text" id="name-f2a8" name="name"
