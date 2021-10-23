@@ -3,7 +3,7 @@ from django.contrib.auth.views import LoginView, LogoutView
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
 from django.contrib.auth import login
-
+from django.contrib.auth.decorators import login_required
 
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
@@ -23,7 +23,7 @@ class Login(LoginView):
 class SignUp(CreateView):
   form_class = SignUpForm
   template_name = 'clothing/Sign-Up.html'
-  success_url = reverse_lazy('')
+  success_url = reverse_lazy('clothing:test')
 
   def form_valid(self, form):
     user = form.save()

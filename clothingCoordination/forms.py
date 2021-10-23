@@ -25,13 +25,18 @@ class SignUpForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for field in self.fields.values():
-            field.widget.attrs['class'] = 'u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-font'
-            self.fields['username'].widget.attrs['id'] = 'name-f2a8'
+            field.widget.attrs[
+                'class'] = 'u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-font'
 
     class Meta:
         model = User
         fields = ('username', 'email', 'years', 'sex', 'body_height', 'email', 'password1', 'password2')
-        widgets = {
-            'username': ()
+        labels = {
+            'username': 'Username',
+            'years': 'years',
+            'sex': 'Gender',
+            'body_height': 'Body Height',
+            'email': 'Email',
+            'password1': 'Password',
+            'password2': 'Password (confirm)',
         }
-

@@ -9,182 +9,61 @@
 
 {% block content %}
   <body class="u-body">
-  {{ form.as_table }}
   <section class="u-align-center u-clearfix u-section-1" id="carousel_aa73">
     <div class="u-clearfix u-sheet u-sheet-1">
       <h2 class="u-custom-font u-text u-text-1">Sign Up</h2>
       <div class="u-form u-form-1">
-        <form action="#" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+        <form action="" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
               style="padding: 0;" source="custom" name="form">{% csrf_token %}
           <div class="u-form-group u-form-name u-form-group-1">
-            <label for="name-f2a8" class="u-custom-font u-label u-label-1">Username</label>
-            <input type="text" id="name-f2a8" name="name"
-                   class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-font"
-                   required="">
+            <label for="{{ form.username.id_for_label }}" class="u-custom-font u-label u-label-1">{{ form.username.label }}</label>
+            {{ form.username }}
           </div>
           <div class="u-form-date u-form-group u-form-partition-factor-2 u-form-group-2">
-            <label for="date-4441" class="u-custom-font u-label u-label-2">Date</label>
-            <input type="date" placeholder="MM/DD/YYYY" id="date-4441" name="date"
-                   class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-font"
-                   required="">
+            <label for="{{ form.years.id_for_label }}" class="u-custom-font u-label u-label-2">{{ form.years.label }}</label>
+            {{ form.years }}
           </div>
           <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-3">
-            <label for="select-8e9d" class="u-custom-font u-label u-label-3">Gender</label>
+            <label for="{{ form.sex.id_for_label }}" class="u-custom-font u-label u-label-3">{{ form.sex.label }}</label>
             <div class="u-form-select-wrapper">
-              <select id="select-8e9d" name="select"
-                      class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-font">
-                <option value="Select">Select</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Neutral">Neutral</option>
-              </select>
+              {{ form.sex }}
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
                 <path fill="currentColor" d="M4 8L0 4h8z"></path>
               </svg>
             </div>
           </div>
           <div class="u-form-group u-form-select u-form-group-4">
-            <label for="select-7a41" class="u-custom-font u-label u-label-4">Height</label>
+            <label for="{{ form.body_height.id_for_label }}" class="u-custom-font u-label u-label-4">{{ form.body_height.label }}</label>
             <div class="u-form-select-wrapper">
-              <select id="select-7a41" name="height"
-                      class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-font">
-                <option value="Select">Select</option>
-                <option value="~ 100">~ 100</option>
-                <option value="101">101</option>
-                <option value="102">102</option>
-                <option value="103">103</option>
-                <option value="104">104</option>
-                <option value="105">105</option>
-                <option value="106">106</option>
-                <option value="107">107</option>
-                <option value="108">108</option>
-                <option value="109">109</option>
-                <option value="110">110</option>
-                <option value="111">111</option>
-                <option value="112">112</option>
-                <option value="113">113</option>
-                <option value="114">114</option>
-                <option value="115">115</option>
-                <option value="116">116</option>
-                <option value="117">117</option>
-                <option value="118">118</option>
-                <option value="119">119</option>
-                <option value="120">120</option>
-                <option value="121">121</option>
-                <option value="122">122</option>
-                <option value="123">123</option>
-                <option value="124">124</option>
-                <option value="125">125</option>
-                <option value="126">126</option>
-                <option value="127">127</option>
-                <option value="128">128</option>
-                <option value="129">129</option>
-                <option value="130">130</option>
-                <option value="131">131</option>
-                <option value="132">132</option>
-                <option value="133">133</option>
-                <option value="134">134</option>
-                <option value="135">135</option>
-                <option value="136">136</option>
-                <option value="137">137</option>
-                <option value="138">138</option>
-                <option value="139">139</option>
-                <option value="140">140</option>
-                <option value="141">141</option>
-                <option value="142">142</option>
-                <option value="143">143</option>
-                <option value="144">144</option>
-                <option value="145">145</option>
-                <option value="146">146</option>
-                <option value="147">147</option>
-                <option value="148">148</option>
-                <option value="149">149</option>
-                <option value="150">150</option>
-                <option value="151">151</option>
-                <option value="152">152</option>
-                <option value="153">153</option>
-                <option value="154">154</option>
-                <option value="155">155</option>
-                <option value="156">156</option>
-                <option value="157">157</option>
-                <option value="158">158</option>
-                <option value="159">159</option>
-                <option value="160">160</option>
-                <option value="161">161</option>
-                <option value="162">162</option>
-                <option value="163">163</option>
-                <option value="164">164</option>
-                <option value="165">165</option>
-                <option value="166">166</option>
-                <option value="167">167</option>
-                <option value="168">168</option>
-                <option value="169">169</option>
-                <option value="170">170</option>
-                <option value="171">171</option>
-                <option value="172">172</option>
-                <option value="173">173</option>
-                <option value="174">174</option>
-                <option value="175">175</option>
-                <option value="176">176</option>
-                <option value="177">177</option>
-                <option value="178">178</option>
-                <option value="179">179</option>
-                <option value="180">180</option>
-                <option value="181">181</option>
-                <option value="182">182</option>
-                <option value="183">183</option>
-                <option value="184">184</option>
-                <option value="185">185</option>
-                <option value="186">186</option>
-                <option value="187">187</option>
-                <option value="188">188</option>
-                <option value="189">189</option>
-                <option value="190">190</option>
-                <option value="191">191</option>
-                <option value="192">192</option>
-                <option value="193">193</option>
-                <option value="194">194</option>
-                <option value="195">195</option>
-                <option value="196">196</option>
-                <option value="197">197</option>
-                <option value="198">198</option>
-                <option value="199">199</option>
-                <option value="200">200</option>
-                <option value="200 ~">200 ~</option>
-              </select>
+              {{ form.body_height }}
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret">
                 <path fill="currentColor" d="M4 8L0 4h8z"></path>
               </svg>
             </div>
           </div>
           <div class="u-form-email u-form-group u-form-group-5">
-            <label for="email-f2a8" class="u-custom-font u-label u-label-5">E-mail</label>
-            <input type="email" id="email-f2a8" name="email"
-                   class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-font"
-                   required="">
+            <label for="{{ form.email.id_for_label }}" class="u-custom-font u-label u-label-5">{{ form.email.label }}</label>
+            {{ form.email }}
           </div>
           <div class="u-form-email u-form-group u-form-group-6">
-            <label for="email-43bb" class="u-custom-font u-label u-label-6">Password</label>
-            <input type="email" id="email-43bb" name="password"
-                   class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-font"
-                   required="">
+            <label for="{{ form.password1.id_for_label }}" class="u-custom-font u-label u-label-6">{{ form.password1.label }}</label>
+            {{ form.password1 }}
           </div>
           <div class="u-form-email u-form-group u-form-group-7">
-            <label for="email-25fc" class="u-custom-font u-label u-label-7">Password（confirm）</label>
-            <input type="email" id="email-25fc" name="password-confirm"
-                   class="u-border-1 u-border-grey-75 u-border-no-left u-border-no-right u-border-no-top u-custom-font u-input u-input-rectangle u-text-font"
-                   required="">
+            <label for="{{ form.password2.id_for_label }}" class="u-custom-font u-label u-label-7">{{ form.password2.label }}</label>
+            {{ form.password2 }}
           </div>
           <div class="u-align-center u-form-group u-form-submit u-form-group-8">
-            <a href="#"
-               class="u-black u-border-none u-btn u-btn-rectangle u-btn-submit u-button-style u-custom-font u-hover-palette-5-light-2 u-btn-1">Submit</a>
-            <input type="submit" value="submit" class="u-form-control-hidden">
+{#            <a href=""#}
+{#               class="u-black u-border-none u-btn u-btn-rectangle u-btn-submit u-button-style u-custom-font u-hover-palette-5-light-2 u-btn-1">Submit</a>#}
+{#            <input type="submit" value="submit" class="u-form-control-hidden">#}
+            <button type="submit" class="u-black u-border-none u-btn u-btn-rectangle u-btn-submit u-button-style u-custom-font u-hover-palette-5-light-2 u-btn-1">Sign Up</button>
           </div>
-          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent.</div>
-          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try
-            again.
-          </div>
-          <input type="hidden" value="" name="recaptchaResponse">
+{#          <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent.</div>#}
+{#          <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try#}
+{#            again.#}
+{#          </div>#}
+{#          <input type="hidden" value="" name="recaptchaResponse">#}
         </form>
       </div>
       <p class="u-text u-text-2">Have already an account?</p>
