@@ -1,35 +1,32 @@
 from django.shortcuts import render
+from django.contrib.auth.views import LoginView, LogoutView
+from django.views.generic import CreateView
+from django.urls import reverse_lazy
+from django.contrib.auth import login
+
+
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
+
+from .forms import SignUpForm, LoginForm
 
 # Create your views here.
 def test(request):
   return render(request, 'clothing/test.html')
 
 
-
-def image_upload(request):
-    if request.method == 'GET':
-        form = UpLoadCoodinateForm
-    else:
-        form = UpLoadCoodinateForm(request.POST, request.FILES)
-        if form.is_valid():
-
-            coordinateInfo.image = request.FILES['image']
-            coordinateInfo.name = request.POST['coodinate_name']
-            # coordinateInfo. = request.POST['']
-            # 削除フラグも必要であれば追加する（画面に反映されるか）
-
-            coordinateInfo.save()
-
-    context = {
-        'form': form
-    }
-    return render(request, 'アプリ名/templates/edit_avator.html', context)
+class Login(LoginView):
+  form_class = LoginForm
+  template_name = 'clothing/login.html'
 
 
-
-def __init__(self):
-    self.params = {
+class SignUp(CreateView):
+  form_class = SignUpForm
+  template_name = 'clothing/Sign-Up.html'
+  success_url = reverse_lazy('')
+  
+ def __init__(self):
+  self.params = {
     "AccountCreate":False,
     "signup_form": SignUpForm(),
     # "add_account_form":AddAccountForm(),
@@ -73,3 +70,24 @@ def post(self,request):
         print(self.params["signup_form"].errors)
 
     return render(request,"App_Folder_HTML/register.html",context=self.params)
+
+  def form_valid(self, form):
+    user = form.save()
+    login(self.request, user)
+    self.object = user
+    return HttpResponseRedirect(self.get_success_url())
+
+
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
+def test(request):
+  return render(request, 'clothing/test.html')
+
+
+
+
+
+
+
